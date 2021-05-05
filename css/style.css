@@ -934,6 +934,10 @@ p {
 	padding: 10px 30px 52px;
 }
 
+.blog_part .all-btn{
+	color: #222
+}
+
 .blog_img {
 	position: relative;
 	text-align: left;
