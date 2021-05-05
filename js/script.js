@@ -162,7 +162,7 @@ $(function () {
 	});
 
 	// aos start 
-	AOS.init();
+	// AOS.init();
 
 	// progressbar start 
 	$('#bar1').barfiller({
