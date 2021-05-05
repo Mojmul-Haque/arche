@@ -142,6 +142,12 @@ $(function () {
 	});
 
 
+	// preloader
+	$(window).on("load", function(){
+        $('.pre_loader').delay(500).fadeOut(500);
+    });
+
+
 	// Or Via JavaScript
 	jarallax(document.querySelectorAll('.jarallax'), {
 		//		videoSrc: 'VIDEO SOURCE HERE'
@@ -190,5 +196,8 @@ $(function () {
 		animateOnResize: true,
 		symbol: "%"
 	});
+
+
+
 
 })

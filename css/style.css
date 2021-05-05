@@ -171,6 +171,23 @@ p {
 .menu_fix .navbar-brand img {
 	height: 70px;
 }
+.pre_loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 999999;
+}
+
+.pre_loader img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 /* re usable css end  */
 
@@ -185,7 +202,7 @@ p {
 	background: #d9b257;
 	position: relative;
 }
-
+/* 
 .header_part:after {
 	content: '';
 	position: absolute;
@@ -197,8 +214,20 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-}
+} */
 
+
+.header_part::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: url(../images/menu_shape.png) no-repeat center;
+    background-size: cover;
+    height: 89px;
+    z-index: -1;
+}
 
 
 .header_part p {
@@ -225,6 +254,10 @@ p {
 .main_menu {
 	height: 150px;
 }
+
+
+
+
 
 .main_menu .navbar-nav .nav-item a.nav-link {
 	font-size: 16px;
